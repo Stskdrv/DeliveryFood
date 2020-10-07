@@ -3,10 +3,19 @@
     font-family: 'Roboto', sans-serif;
 
 }
+@mixin input {
+    border-radius: 2px;
+    background-color: whitesmoke;
+    border: 1px solid #D9D9D9;
+    font-size: 16px;
+    font-weight: 300;
+    background-position-x: 5px;
+    padding: 0 25px;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
-
 }
 .header{
     margin-top: 44px;
@@ -23,23 +32,17 @@
     }
     &_search {
         input {
+            @include input;
             width: 690px;
             height: 40px;
-            border-radius: 5px;
-            background-color: whitesmoke;
-            
-            border: none;
-            padding: 0 20px;
             color: #4b4b4b;
-            font-size: 14px;
-            font-weight: 300;
             background: url(../img/home.png) left no-repeat;
-
         }
 
     }
     &_buttons {
         .enter{
+            cursor: pointer;
             width: 96px;
             height: 40px;
             color: #ffffff;
@@ -53,22 +56,24 @@
             border: none;
             margin: 0 5px;
             background: #1890FF url(../img/user.png) left no-repeat;
+            background-position: 5px;
 
         }
         .basket{
+            cursor: pointer;
             padding: 3px;
             width: 113px;
             height: 40px;
             color: #595959;
             // background: #F5F5F5;
-            font-style: normal;
-            font-weight: normal;
             font-size: 16px;
             line-height: 24px;
             border-radius: 4px;
-            border: none;
+            border: 1px solid #D9D9D9;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
             margin: 0 5px;
-            background:#F5F5F5 url(../img/basket.png) left no-repeat;
+            background:#ffffff url(../img/basket.png) left no-repeat;
+            background-position: 5px;
         }
     }
 }
@@ -91,10 +96,82 @@
 
 
     }
+}    
+.cards {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    margin-top: 44px;
+    &_header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+    }
+    &_title {
+        font-weight: 700;
+        font-size: 36px;
+
+    }
+    &_search{
+        input{
+            @include input;
+            width: 306px;
+            height: 34px;   
+            background:#ffffff url(../img/search.png) left no-repeat;
+        }
+        
+    }
+    &_wrapper{
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .card{
+        margin-top: 30px;
+        min-width: 379px;
+        min-height: 384px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+        &_title{
+            margin: 10px 24px;
+            display: flex;
+            justify-content: space-between;
+            .name{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .time{
+                background-color: black;
+                color: #ffffff;
+                padding: 5px;
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+        &_subtitle{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 24px;
+            .stars{
+                font-weight: bold;
+                font-size: 18px;
+                color: #FFC107;
+            }
+            .text{
+                padding-right: 108px;
+                font-weight: normal;
+                font-size: 18px;
+                color: #8C8C8C;
+            }
+        }
 
 
-
+    }
 }
+
+
+
     
 
 
