@@ -1,4 +1,6 @@
 
+@import '../scss/rstyle';
+
 * {
     font-family: 'Roboto', sans-serif;
 
@@ -97,7 +99,7 @@
 
 
     }
-}    
+} 
 .cards {
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
     border-radius:10px;
@@ -136,6 +138,7 @@
         background: #FFFFFF;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
         border-radius: 7px;
+        
         &_title{
             margin: 10px 24px;
             display: flex;
@@ -171,7 +174,11 @@
 
 
     }
+    // .card:hover{
+    //     box-shadow: 0 0 40px rgba(0,0,0,1);
+    // }
 }
+
 .footer{
     margin-top: 58px;
     min-height: 80px;
@@ -464,7 +471,7 @@
                 width: 250px;
                 font-size: 16px;
                 margin: 0;
-                text-color:black;
+                color:black;
                 border: 1px solid rgb(10, 14, 46);
             }
 

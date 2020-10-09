@@ -1,3 +1,191 @@
+.tcards {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+  border-radius: 10px;
+  margin-top: 44px;
+  padding-bottom: 58px;
+}
+
+.tcards_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 58px;
+}
+
+.tcards_title {
+  font-weight: 700;
+  font-size: 36px;
+  padding: 0 15px;
+}
+
+.tcards_subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 24px;
+  padding-right: 108px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #8C8C8C;
+  word-spacing: 5px;
+}
+
+.cards .tcard {
+  margin-top: 30px;
+  width: 379px;
+  min-height: 415px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+}
+
+.cards .tcard img {
+  width: 379px;
+}
+
+.cards .tcard_title {
+  margin: 10px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards .tcard_subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 24px;
+  padding-right: 108px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #8C8C8C;
+  word-spacing: 5px;
+}
+
+.cards .tcard_footer {
+  margin: 24px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .tcard_footer .cardbutt {
+  cursor: pointer;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: none;
+  width: 124px;
+  height: 40px;
+  background: #1890FF url(../img/basket.png) right no-repeat;
+  background-position-x: 105px;
+}
+
+.cards .tcard_footer .price {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 32px;
+}
+
+.cards .card {
+  margin-top: 30px;
+  min-width: 379px;
+  min-height: 384px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+}
+
+.cards .card_title {
+  margin: 10px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards .card_title .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards .card_title .time {
+  background-color: black;
+  color: #ffffff;
+  padding: 5px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.cards .card_subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 24px;
+}
+
+.cards .card_subtitle .stars {
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFC107;
+}
+
+.cards .card_subtitle .text {
+  padding-right: 108px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #8C8C8C;
+}
+
+@media screen and (max-width: 575px) {
+  .cards .tcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cards .tcards_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards .tcards_subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    word-spacing: normal;
+    font-size: 15px;
+    padding-right: 0;
+  }
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -455,7 +643,7 @@
     width: 250px;
     font-size: 16px;
     margin: 0;
-    text-color: black;
+    color: black;
     border: 1px solid #0a0e2e;
   }
   .header_buttons .enter {
